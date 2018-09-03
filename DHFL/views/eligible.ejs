@@ -1,0 +1,121 @@
+ 
+<% include ./partials/header %>
+
+<div class="upper">
+<div>
+<ul> 
+  <li><a href="#logo"><b>DHFL Bank</b></a></li>
+  <li style="float:right"><a href="login.html"><b>LOGOUT</b></a></li>
+  <li style="float:right"><a href="menu.html"><b>MENU</b></a></li>
+</ul><center>
+
+<br><div class="box"><center><h1><b>Eligibity Form</b></h1>
+<form action="approve.html" method="post">
+<table border="0"><font size="6"><b>
+  <tr><td>
+First Name:
+</td>
+<td>
+  <input type="text" name="fname">
+</td>
+</tr>
+<tr><td>
+  Last Name:
+</td>
+<td>
+<input type="text" name="lname">
+</td>
+</tr>
+<tr><td>
+Loan Amount:
+</td>
+<td>
+<input type="text" name="loan amount">
+</td>
+</tr>
+<tr><td>
+Term:
+</td>
+<td>
+<input type="text" name="term">
+</td>
+</tr>
+<tr><td>
+Interest Rate:
+</td>
+<td>
+<input type="text" name="interest">
+</td>
+</tr>
+<tr><td>
+Occupation:
+</td>
+<td>
+<input type="text" name="occupation">
+</td>
+</tr>
+<tr><td>
+Employment Length:
+</td>
+<td>
+<input type="text" name="Length">
+</td>
+</tr>
+<tr><td>
+Home Ownership:
+</td>
+<td>
+  <input type="radio" name="home" value="owned" checked> Owned
+    <input type="radio" name="home" value="on-rent"> On-rent
+    <input type="radio" name="home" value="mortgage"> Mortgage
+</td>
+</tr>
+<tr><td>
+Annual income:
+</td>
+<td>
+  <input type="text" name="income">
+</td>
+</tr>
+<tr><td>
+No of active loans:
+</td>
+<td>
+  <input type="number" min="1" max="10" value="1">
+</td>
+</tr>
+<tr><td>
+Cibil Rating:
+</td>
+<td>
+  <input type="number" min="1" max="5" value="1">
+</td>
+</tr>
+<tr><td>
+Amount Last payed for Inconme Tax:
+</td>
+<td>
+  <input type="text" name="income">
+</td>
+</tr>
+<tr><td>
+Latest Income Tax Payment Date:
+</td>
+<td>
+  Day:<input type="number" min="1" max="31" value="1">
+  Month:<input type="number" min="1" max="12" value="1">
+  Year:<input type="number" min="2000" max="2025" value="1">
+</td>
+</tr>
+</b></font>
+</table><br><a href="result.html">
+<button type="submit" value="Submit">Check Eligibility</button><br></a>
+</form>
+</div><br><br>
+</div>
+</div>
+<div class="footer">
+<p><br> <br><br></p>
+</div>
+</body>
+</html>

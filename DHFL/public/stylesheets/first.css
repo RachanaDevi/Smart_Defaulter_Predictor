@@ -1,0 +1,35 @@
+ body{
+
+    background: url(/Images/powerpoint-background-professional-professional-ppt-background-free-abstract-blue-geometric-backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+  }
+
+  .box1
+  {
+    text-align:center;
+    height: 180px;
+        width: 22%;
+    background-color:blue;
+    position:relative;
+    left:500px;
+  }
+  button{
+    background-color:blue;
+    border:none;
+     padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+    	 font-size: 14px;
+  }
+  h1{
+    text-align:center;
+    font:"Times New Roman";
+    color:blue; 
+    }
+
+    .trans
+    {
+      transition-delay: 2s;
+    }
