@@ -5,10 +5,10 @@ var passportLocalMongoose = require('passport-local-mongoose'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose'),
     passport = require('passport'),
-    express = require('express'),
+    express = require('express'), 
     app     = express ();
    
-
+ 
 //Connecting to Database
 mongoose.connect("mongodb://localhost/customer_db",{useNewUrlParser:true});
 
@@ -32,6 +32,11 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 
+app.use(function(req,res,next){
+
+   res.locals.currentUser = req.user;
+   next();
+});
 /**********ROUTES***********************/
 
 
@@ -43,7 +48,7 @@ app.get("/",function(req,res){
 
 
 app.get("/menu",isLoggedIn,function(req,res){
-	res.render("menu",{stylesheet:'menu.css'});
+	res.render("menu",{stylesheet:'menu.css',currentUser:req.user});
 });
 
 app.get("/menu/eligible",isLoggedIn,function(req,res){
@@ -111,7 +116,10 @@ app.post("/login", passport.authenticate("local", {
 /************LOGOUT******************************/
 
 app.get("/logout",function(req,res){
+   console.log(req.user);
    req.logout();
+   console.log(req.user);
+
    res.redirect("/");
 });
 

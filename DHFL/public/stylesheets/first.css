@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
-  }
+  } 
 
   .box1
   {
@@ -33,3 +33,10 @@
     {
       transition-delay: 2s;
     }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}

@@ -2,6 +2,25 @@
 <html>
 <head>
 <link rel='stylesheet' type='text/css' href='/stylesheets/<%= stylesheet %>'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+
+
+<div class="upper">
+<div>
+<ul>
+  <li style="float:left"><a href="/"><b>DHFL Bank</b></a></li>
+  <% if(!currentUser){ %>
+  	
+  <li style="float:right"><a href="/login"><b>SIGNUP</b></a></li>
+  <li style="float:right"><a href="/login"><b>LOGIN</b></a></li>
+  <% }else{ %>
+  <li style="float:left"><a href="/menu"><b>  MENU</b></a></li>
+  <li style="float:right"><a href="/logout"><b>LOGOUT</b></a></li>
+  <% } %>
+  <!-- <li style="float:right"><a href="/menu/existing"><b>BACK</b></a></li> -->
+</ul>
+</div><br><br><br><br>
+
 	
